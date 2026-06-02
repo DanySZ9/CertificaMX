@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CertificaMX | Registro Exitoso</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Fira+Sans:wght@400;500;600&family=Comfortaa:wght@400;600&display=swap"/>
+    <style>
+        :root {
+            --encabezado: "Montserrat";
+            --subencabezados: "Fira Sans";
+            --texto: "Comfortaa";
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f9fafb;
+            font-family: var(--subencabezados), sans-serif;
+        }
+
+        .bg-container {
+            position: fixed;
+            inset: 0;
+            background: #fff;
+            z-index: -1;
+        }
+        .bg-grid {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
+                linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px);
+            background-size: 14px 24px;
+            -webkit-mask-image: radial-gradient(ellipse 100% 80% at 50% 0%, #000 60%, transparent 100%);
+            mask-image: radial-gradient(ellipse 100% 80% at 50% 0%, #000 60%, transparent 100%);
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #e8e8e8;
+            border-radius: 28px;
+            padding: 56px 48px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 16px 60px rgba(0,0,0,0.07);
+            animation: fadeUp 0.6s ease-out both;
+        }
+
+        .check-circle {
+            width: 88px;
+            height: 88px;
+            background: #268e0012;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 28px;
+            animation: popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s both;
+        }
+        .check-circle svg {
+            animation: drawCheck 0.4s ease-out 0.5s both;
+        }
+
+        h1 {
+            font-family: var(--encabezado), sans-serif;
+            font-weight: 900;
+            font-size: 30px;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            animation: fadeUp 0.5s ease-out 0.3s both;
+        }
+        h1 span { color: #268e00; }
+
+        .subtitle {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 36px;
+            animation: fadeUp 0.5s ease-out 0.4s both;
+        }
+
+        .info-box {
+            background: #268e0008;
+            border: 1px solid #268e0025;
+            border-radius: 16px;
+            padding: 20px 24px;
+            margin-bottom: 32px;
+            text-align: left;
+            animation: fadeUp 0.5s ease-out 0.45s both;
+        }
+        .info-box p {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .info-box strong {
+            font-family: var(--encabezado), sans-serif;
+            font-size: 12px;
+            color: #268e00;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            width: 100%;
+            padding: 14px 36px;
+            border: none;
+            font-family: var(--encabezado), sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            background-color: #268e00;
+            border-radius: 15px;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.15s;
+            text-decoration: none;
+            animation: fadeUp 0.5s ease-out 0.5s both;
+        }
+        .btn-primary:hover {
+            background-color: #1d7000;
+            transform: translateY(-1px);
+        }
+
+        .folio {
+            font-family: "Courier New", monospace;
+            font-size: 13px;
+            font-weight: 700;
+            background: #f0f0f0;
+            color: #333;
+            padding: 6px 14px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 4px;
+            letter-spacing: 1px;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.5); }
+            to   { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-container"><div class="bg-grid"></div></div>
+
+    <div class="card">
+        <div class="check-circle">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" fill="#268e00"/>
+                <path d="M7 12l4 4 6-7" stroke="white" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <h1>¡Registro <span>exitoso</span>!</h1>
+        <p class="subtitle">
+            Tu cuenta ha sido creada correctamente. Ya puedes iniciar sesión
+            y comenzar a gestionar tus solicitudes de certificados.
+        </p>
+
+        <div class="info-box">
+            <strong>Número de folio asignado</strong>
+            <p>Guarda este número para dar seguimiento a tus trámites:</p>
+            <span class="folio" id="folio">CMX-2025-00000</span>
+        </div>
+
+        <a href="index.html" class="btn-primary">Volver al Inicio</a>
+    </div>
+
+    <script>
+        // Genera un folio aleatorio para la demo
+        const num = String(Math.floor(Math.random() * 90000) + 10000);
+        document.getElementById('folio').textContent = 'CMX-2025-' + num;
+    </script>
+</body>
+</html>

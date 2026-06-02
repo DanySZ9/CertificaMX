@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CertificaMX | Solicitud de Certificado</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bg-container"><div class="bg-grid"></div></div>
+
+    <header>
+        <div class="logo">
+            <svg width="170" height="44" viewBox="0 0 170 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 6 L22 2 L36 6 L36 20 C36 28 22 36 22 36 C22 36 8 28 8 20 Z" fill="#268e00"/>
+                <path d="M15 18 l5 5 l9-10" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <text x="44" y="26" font-family="Montserrat, sans-serif" font-weight="900" font-size="20" fill="#1a1a1a" letter-spacing="-0.5">Certifica</text>
+                <text x="131" y="26" font-family="Montserrat, sans-serif" font-weight="900" font-size="20" fill="#268e00">MX</text>
+            </svg>
+        </div>
+        <div class="menu">
+            <div>
+                <ul>
+                    <li>Inicio</li>
+                    <li>Acerca</li>
+                    <li>Solicitud</li>
+                    <li>Tipos</li>
+                    <li>Estado de Solicitud</li>
+                    <li>Contacto</li>
+                </ul>
+            </div>
+            <div class="forms-btns">
+                <button onclick="window.location.href='#registro'">Registro</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCION PRINCIPAL -->
+    <div class="container">
+        <div class="sec-info">
+            <h1>Solicita tus certificados de forma <span>rapida</span> y <span>segura</span>.</h1>
+            <h2>Gestiona tus solicitudes en línea sin complicaciones y consulta el estado de tus trámites en cualquier momento.</h2>
+            <p>Bienvenido a nuestro sistema de gestión de certificados. Aquí podrás realizar solicitudes, consultar información y dar seguimiento a tus trámites de manera sencilla. Nuestro objetivo es agilizar el proceso y brindarte una experiencia cómoda, eficiente y accesible desde cualquier dispositivo.</p>
+            <div class="hero-cta">
+                <button class="btn-primary" onclick="window.location.href='#solicitud'">Iniciar Solicitud</button>
+                <button class="btn-outline" onclick="window.location.href='#tipos'">Ver Certificados</button>
+            </div>
+        </div>
+        <div class="sec-img">
+            <div class="hero-illustration">
+
+                <!-- Círculo decorativo de fondo -->
+                <div class="hero-bg-circle"></div>
+
+                <!-- Tarjeta principal tipo dashboard -->
+                <div class="hero-card-main">
+                    <div class="hero-card-header">
+                        <span class="hero-card-dot green"></span>
+                        <span class="hero-card-dot yellow"></span>
+                        <span class="hero-card-dot red"></span>
+                        <span class="hero-card-title">Panel de solicitudes</span>
+                    </div>
+                    <div class="hero-card-body">
+                        <div class="hero-stat-row">
+                            <div class="hero-stat">
+                                <span class="hero-stat-num">12</span>
+                                <span class="hero-stat-label">En proceso</span>
+                            </div>
+                            <div class="hero-stat">
+                                <span class="hero-stat-num green">48</span>
+                                <span class="hero-stat-label">Completados</span>
+                            </div>
+                            <div class="hero-stat">
+                                <span class="hero-stat-num">3</span>
+                                <span class="hero-stat-label">Pendientes</span>
+                            </div>
+                        </div>
+                        <div class="hero-bar-list">
+                            <div class="hero-bar-item">
+                                <span>Cert. Estudios</span>
+                                <div class="hero-bar"><div class="hero-bar-fill" style="width:82%"></div></div>
+                                <span>82%</span>
+                            </div>
+                            <div class="hero-bar-item">
+                                <span>Cert. Profesional</span>
+                                <div class="hero-bar"><div class="hero-bar-fill" style="width:65%"></div></div>
+                                <span>65%</span>
+                            </div>
+                            <div class="hero-bar-item">
+                                <span>Cert. Nacimiento</span>
+                                <div class="hero-bar"><div class="hero-bar-fill" style="width:91%"></div></div>
+                                <span>91%</span>
+                            </div>
+                            <div class="hero-bar-item">
+                                <span>Cert. Residencia</span>
+                                <div class="hero-bar"><div class="hero-bar-fill" style="width:48%"></div></div>
+                                <span>48%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta flotante: estado -->
+                <div class="hero-card-float float-status">
+                    <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" fill="#268e00"/>
+                            <path d="M7 12l4 4 6-7" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span style="font-family:Montserrat,sans-serif;font-size:12px;font-weight:700;color:#1a1a1a">Trámite Verificado</span>
+                    </div>
+                    <div class="float-progress-bar"><div class="float-progress-fill" style="width:72%"></div></div>
+                    <div style="display:flex;justify-content:space-between;margin-top:5px">
+                        <span style="font-family:'Fira Sans',sans-serif;font-size:10px;color:#888">En proceso de emisión</span>
+                        <span style="font-family:Montserrat,sans-serif;font-size:10px;font-weight:700;color:#268e00">72%</span>
+                    </div>
+                </div>
+
+                <!-- Tarjeta flotante: nuevo certificado -->
+                <div class="hero-card-float float-new">
+                    <div style="display:flex;align-items:center;gap:10px">
+                        <div style="width:36px;height:36px;border-radius:10px;background:#268e0015;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8L14 2z" stroke="#268e00" stroke-width="2"/>
+                                <path d="M14 2v6h6" stroke="#268e00" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p style="font-family:Montserrat,sans-serif;font-size:12px;font-weight:700;color:#1a1a1a;margin:0">Certificado listo</p>
+                            <p style="font-family:'Fira Sans',sans-serif;font-size:11px;color:#888;margin:0">CMX-2025-00482 · Hace 2 min</p>
+                        </div>
+                        <div style="width:8px;height:8px;border-radius:50%;background:#268e00;flex-shrink:0;margin-left:auto"></div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta flotante: usuarios -->
+                <div class="hero-card-float float-users">
+                    <div style="display:flex;align-items:center;gap:8px">
+                        <div class="avatar-stack">
+                            <div class="avatar av1">MR</div>
+                            <div class="avatar av2">JL</div>
+                            <div class="avatar av3">+</div>
+                        </div>
+                        <div>
+                            <p style="font-family:Montserrat,sans-serif;font-size:11px;font-weight:700;color:#1a1a1a;margin:0">+2,400 usuarios activos</p>
+                            <p style="font-family:'Fira Sans',sans-serif;font-size:10px;color:#888;margin:0">Esta semana</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- STATS -->
+    <section class="section-stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">+12,000</span>
+                <span class="stat-label">Certificados Emitidos</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">48 hrs</span>
+                <span class="stat-label">Tiempo Promedio</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">99.8%</span>
+                <span class="stat-label">Satisfacción</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Digital & Seguro</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIPOS DE CERTIFICADOS -->
+    <section class="section-tipos" id="tipos">
+        <div class="section-header">
+            <p class="section-tag">NUESTROS SERVICIOS</p>
+            <h2>Tipos de <span>Certificados</span></h2>
+            <p class="section-sub">Contamos con una amplia variedad de certificados oficiales para cubrir todas tus necesidades académicas, profesionales y legales.</p>
+        </div>
+        <div class="tipos-grid">
+            <div class="tipo-card">
+                <div class="tipo-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7v5c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7L12 2z" stroke="#268e00" stroke-width="2" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#268e00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3>Certificado de Estudios</h3>
+                <p>Acredita tu nivel educativo ante instituciones públicas y privadas. Válido en todo el territorio nacional.</p>
+                <span class="tipo-tiempo">⏱ 24 - 48 hrs</span>
+            </div>
+            <div class="tipo-card featured">
+                <div class="tipo-badge">Más solicitado</div>
+                <div class="tipo-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="3" stroke="#268e00" stroke-width="2"/><path d="M8 9h8M8 13h5" stroke="#268e00" stroke-width="2" stroke-linecap="round"/><circle cx="18" cy="18" r="4" fill="#268e00"/><path d="M16.5 18l1 1 2-2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3>Certificado Profesional</h3>
+                <p>Certifica tu experiencia y formación profesional. Reconocido por empresas y organismos reguladores.</p>
+                <span class="tipo-tiempo">⏱ 48 - 72 hrs</span>
+            </div>
+            <div class="tipo-card">
+                <div class="tipo-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#268e00" stroke-width="2"/><path d="M5 20c0-3.3 3.1-6 7-6s7 2.7 7 6" stroke="#268e00" stroke-width="2" stroke-linecap="round"/><path d="M17 3l1.5 1.5L21 2" stroke="#268e00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3>Certificado de Nacimiento</h3>
+                <p>Documento oficial de registro civil con validez para trámites nacionales e internacionales.</p>
+                <span class="tipo-tiempo">⏱ 1 - 3 días</span>
+            </div>
+            <div class="tipo-card">
+                <div class="tipo-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke="#268e00" stroke-width="2"/><path d="M9 22V12h6v10" stroke="#268e00" stroke-width="2"/></svg>
+                </div>
+                <h3>Certificado de Residencia</h3>
+                <p>Acredita tu domicilio actual ante dependencias gubernamentales y trámites administrativos.</p>
+                <span class="tipo-tiempo">⏱ 24 hrs</span>
+            </div>
+            <div class="tipo-card">
+                <div class="tipo-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8L14 2z" stroke="#268e00" stroke-width="2"/><path d="M14 2v6h6M8 13h8M8 17h5" stroke="#268e00" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Certificado Laboral</h3>
+                <p>Constancia de empleo y antigüedad laboral para trámites bancarios, crediticios y migratorios.</p>
+                <span class="tipo-tiempo">⏱ 24 - 48 hrs</span>
+            </div>
+            <div class="tipo-card">
+                <div class="tipo-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#268e00" stroke-width="2"/><path d="M12 6v6l4 2" stroke="#268e00" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Certificado de No Antecedentes</h3>
+                <p>Documento que certifica la ausencia de antecedentes penales. Requerido para empleo y visa.</p>
+                <span class="tipo-tiempo">⏱ 3 - 5 días</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FUNCIONAMIENTO -->
+    <section class="section-proceso">
+        <div class="section-header light">
+            <p class="section-tag">PROCESO SIMPLE</p>
+            <h2>¿Cómo <span>funciona</span>?</h2>
+        </div>
+        <div class="proceso-steps">
+            <div class="step">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h3>Regístrate</h3>
+                    <p>Crea tu cuenta en minutos con tu correo electrónico y datos personales básicos.</p>
+                </div>
+                <div class="step-arrow">→</div>
+            </div>
+            <div class="step">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h3>Selecciona</h3>
+                    <p>Elige el tipo de certificado que necesitas y llena el formulario de solicitud.</p>
+                </div>
+                <div class="step-arrow">→</div>
+            </div>
+            <div class="step">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h3>Verifica</h3>
+                    <p>Adjunta los documentos requeridos. Nuestro sistema los valida automáticamente.</p>
+                </div>
+                <div class="step-arrow">→</div>
+            </div>
+            <div class="step">
+                <div class="step-number">04</div>
+                <div class="step-content">
+                    <h3>Recibe</h3>
+                    <p>Descarga tu certificado digital firmado o recíbelo en tu domicilio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTADO DE SOLICITUD -->
+    <section class="section-estado" id="estado">
+        <div class="estado-inner">
+            <div class="estado-info">
+                <p class="section-tag">SEGUIMIENTO</p>
+                <h2>Consulta el estado de tu <span>solicitud</span></h2>
+                <p>Ingresa tu número de folio para conocer en qué etapa se encuentra tu trámite en tiempo real.</p>
+                <ul class="estado-features">
+                    <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#268e00"/><path d="M7 12l4 4 6-7" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Actualizaciones en tiempo real</li>
+                    <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#268e00"/><path d="M7 12l4 4 6-7" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Notificaciones por correo electrónico</li>
+                    <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#268e00"/><path d="M7 12l4 4 6-7" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Historial completo de tus trámites</li>
+                </ul>
+            </div>
+            <div class="estado-widget">
+                <div class="widget-card">
+                    <h4>Consultar Solicitud</h4>
+                    <div class="input-group">
+                        <label>Número de Folio</label>
+                        <input type="text" placeholder="Ej. CMX-2025-00482" />
+                    </div>
+                    <button class="btn-primary full">Consultar Estado</button>
+                    <div class="widget-demo">
+                        <div class="demo-step done">
+                            <div class="demo-dot"></div>
+                            <div class="demo-line"></div>
+                            <span>Solicitud recibida</span>
+                            <small>Hace 2 días</small>
+                        </div>
+                        <div class="demo-step done">
+                            <div class="demo-dot"></div>
+                            <div class="demo-line"></div>
+                            <span>Documentos validados</span>
+                            <small>Hace 1 día</small>
+                        </div>
+                        <div class="demo-step active">
+                            <div class="demo-dot"></div>
+                            <div class="demo-line"></div>
+                            <span>En proceso de emisión</span>
+                            <small>En curso</small>
+                        </div>
+                        <div class="demo-step">
+                            <div class="demo-dot"></div>
+                            <span>Certificado listo</span>
+                            <small>Pendiente</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="section-registro" id="registro">
+        <div class="section-header">
+            <p class="section-tag">EMPIEZA AHORA</p>
+            <h2>Crea tu <span>cuenta</span></h2>
+            <p class="section-sub">Regístrate gratis y solicita tus certificados desde cualquier lugar.</p>
+        </div>
+        <div class="registro-layout">
+            <div class="registro-form-wrapper" id="solicitud">
+                <form class="registro-form" onsubmit="handleRegistro(event)" novalidate>
+                    <div class="form-row">
+                        <div class="input-group">
+                        <label>Nombre(s)</label>
+                        <input type="text" pattern="[A-Za-záéíóúÁÉÍÓÚüÜñÑ\s]{2,50}" placeholder="Tu nombre" required/>
+                        </div>
+                        <div class="input-group">
+                        <label>Apellidos</label>
+                        <input type="text" pattern="[A-Za-záéíóúÁÉÍÓÚüÜñÑ\s]{2,50}" placeholder="Tus apellidos" required/>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>Correo Electrónico</label>
+                        <input type="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" placeholder="correo@ejemplo.com" required/>
+                    </div>
+                    <div class="input-group">
+                        <label>Teléfono</label>
+                        <input type="tel" pattern="(\+52\s?)?[0-9]{2,3}[\s\-]?[0-9]{3,4}[\s\-]?[0-9]{4}" placeholder="+52 81 0000 0000" required/>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Contraseña</label>
+                        <div class="pw-wrap">
+                        <input type="password" id="password" placeholder="Mínimo 8 caracteres" required autocomplete="new-password"/>
+                        <button type="button" class="pw-toggle" id="pw-toggle" aria-label="Mostrar contraseña">
+                            <i class="ti ti-eye" id="pw-eye"></i>
+                        </button>
+                        </div>
+                        <div class="pw-strength"><div class="pw-strength-bar" id="pw-bar"></div></div>
+                        <div class="pw-checklist">
+                        <span class="pw-req" id="req-len"><i class="ti ti-circle-check"></i>Mínimo 8 caracteres</span>
+                        <span class="pw-req" id="req-upper"><i class="ti ti-circle-check"></i>Una mayúscula</span>
+                        <span class="pw-req" id="req-lower"><i class="ti ti-circle-check"></i>Una minúscula</span>
+                        <span class="pw-req" id="req-num"><i class="ti ti-circle-check"></i>Un número</span>
+                        <span class="pw-req" id="req-sym"><i class="ti ti-circle-check"></i>Un símbolo (@$!%*?&)</span>
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" id="terminos" required/>
+                        <label for="terminos">Acepto los <a href="#">Términos y Condiciones</a> y el <a href="#">Aviso de Privacidad</a></label>
+                    </div>
+                    <input type="submit" class="btn-primary full" value="Crear Cuenta Gratis"/>
+                    <p class="form-login">¿Ya tienes cuenta? <a href="#">Inicia sesión</a></p>
+                    </form>
+            </div>
+            <div class="registro-benefits">
+                <h3>¿Por qué elegirnos?</h3>
+                <div class="benefit">
+                    <div class="benefit-icon">🔒</div>
+                    <div>
+                        <strong>100% Seguro</strong>
+                        <p>Tus datos están protegidos con cifrado de grado bancario.</p>
+                    </div>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">⚡</div>
+                    <div>
+                        <strong>Proceso Rápido</strong>
+                        <p>Recibe tus certificados en horas, no en semanas.</p>
+                    </div>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">📱</div>
+                    <div>
+                        <strong>Desde Cualquier Dispositivo</strong>
+                        <p>Accede y gestiona tus trámites desde tu celular o computadora.</p>
+                    </div>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">✅</div>
+                    <div>
+                        <strong>Documentos Oficiales</strong>
+                        <p>Todos nuestros certificados tienen validez legal y oficial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <svg width="150" height="38" viewBox="0 0 170 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 6 L22 2 L36 6 L36 20 C36 28 22 36 22 36 C22 36 8 28 8 20 Z" fill="#268e00"/>
+                    <path d="M15 18 l5 5 l9-10" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <text x="44" y="26" font-family="Montserrat, sans-serif" font-weight="900" font-size="20" fill="white" letter-spacing="-0.5">Certifica</text>
+                    <text x="131" y="26" font-family="Montserrat, sans-serif" font-weight="900" font-size="20" fill="#268e00">MX</text>
+                </svg>
+                <p>La plataforma digital para gestionar tus certificados oficiales de manera rápida, segura y accesible.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h5>Servicios</h5>
+                    <ul>
+                        <li>Certificado de Estudios</li>
+                        <li>Certificado Profesional</li>
+                        <li>Certificado de Nacimiento</li>
+                        <li>Certificado Laboral</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Plataforma</h5>
+                    <ul>
+                        <li>Iniciar Sesión</li>
+                        <li>Crear Cuenta</li>
+                        <li>Estado de Solicitud</li>
+                        <li>Preguntas Frecuentes</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li>Aviso de Privacidad</li>
+                        <li>Términos de Uso</li>
+                        <li>Política de Cookies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 CertificaMX. Todos los derechos reservados.</p>
+            <p>Servicio oficial de gestión de certificados en México.</p>
+        </div>
+    </footer>
+
+    <script>
+        const pwInput = document.getElementById('password');
+        const pwBar = document.getElementById('pw-bar');
+        const toggle = document.getElementById('pw-toggle');
+        const eyeIcon = document.getElementById('pw-eye');
+
+        const reqs = {
+        len:   { el: document.getElementById('req-len'),   test: v => v.length >= 8 },
+        upper: { el: document.getElementById('req-upper'), test: v => /[A-Z]/.test(v) },
+        lower: { el: document.getElementById('req-lower'), test: v => /[a-z]/.test(v) },
+        num:   { el: document.getElementById('req-num'),   test: v => /\d/.test(v) },
+        sym:   { el: document.getElementById('req-sym'),   test: v => /[@$!%*?&_\-]/.test(v) },
+        };
+
+        const strengthColors = ['#E24B4A', '#EF9F27', '#EF9F27', '#639922', '#1D9E75'];
+        const strengthSteps  = [0, 20, 40, 60, 80, 100];
+
+        pwInput.addEventListener('input', function () {
+        const val = this.value;
+        let score = 0;
+
+        Object.values(reqs).forEach(r => {
+            const ok = r.test(val);
+            r.el.classList.toggle('met', ok);
+            if (ok) score++;
+        });
+
+        pwBar.style.width      = val.length === 0 ? '0%' : strengthSteps[score] + '%';
+        pwBar.style.background = val.length === 0 ? '' : strengthColors[score - 1] || strengthColors[0];
+
+        const valid = score === 5;
+        this.setCustomValidity(valid || val.length === 0 ? '' : 'Contraseña inválida');
+        });
+
+        toggle.addEventListener('click', function () {
+        const show = pwInput.type === 'password';
+        pwInput.type = show ? 'text' : 'password';
+        eyeIcon.className = show ? 'ti ti-eye-off' : 'ti ti-eye';
+        });
+
+        function handleRegistro(e) {
+            e.preventDefault();
+            const form = e.target;
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+            window.location.href = 'exitoso.html';
+        }
+    </script>
+
+</body>
+</html>
